@@ -66,7 +66,7 @@ class AboutPage extends StatelessWidget {
                   },
                   style: TextButton.styleFrom(
                       padding: const EdgeInsets.all(15),
-                      backgroundColor: DarkGreen.withOpacity(0.5),
+                      backgroundColor: LightGreen.withOpacity(0.5),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                         side: BorderSide(
