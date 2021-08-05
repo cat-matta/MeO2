@@ -1,4 +1,5 @@
 import 'package:client/screens/about/about.dart';
+import 'package:client/screens/login/login.dart';
 import 'package:flutter/material.dart';
 
 import 'constants.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: BackgroundColor,
         ),
         home: SafeArea(
-          child: AboutPage(),
+          child: login(),
         ));
   }
 }
