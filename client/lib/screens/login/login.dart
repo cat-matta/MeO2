@@ -2,11 +2,12 @@ import 'dart:ui';
 
 import 'package:client/constants.dart';
 import 'package:client/screens/about/about.dart';
+import 'package:client/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class login extends StatelessWidget {
-  const login({Key? key}) : super(key: key);
+class LogIn extends StatelessWidget {
+  const LogIn({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -16,6 +17,7 @@ class login extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 15.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Spacer(),
             Image.asset("images/MeO2.png"),
@@ -179,9 +181,7 @@ class SignInBttn extends StatelessWidget {
               fontWeight: FontWeight.bold,
             )),
           ),
-          onPressed: () {
-            print("Hi");
-          }),
+          onPressed: () {}),
     );
   }
 }
@@ -208,8 +208,8 @@ class NewUserText extends StatelessWidget {
         ),
       ),
       onTap: () {
-        Navigator.push(context,
-            PageRouteBuilder(pageBuilder: (_, __, ___) => AboutPage()));
+        Navigator.push(
+            context, PageRouteBuilder(pageBuilder: (_, __, ___) => SignUp()));
         // userNameFieldController.clear();
         // passwordFieldController
         //     .clear(); // clears password // if the user is not registered go to the sign up page
