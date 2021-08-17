@@ -1,6 +1,7 @@
 import 'package:client/screens/about/about.dart';
 import 'package:client/screens/login/login.dart';
 import 'package:client/screens/main/mainscreen.dart';
+import 'package:client/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 
 import 'constants.dart';

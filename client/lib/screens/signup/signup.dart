@@ -16,7 +16,7 @@ class SignUp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Spacer(),
-            Image.asset("images/MeO2.png"),
+            Image.asset("assets/images/MeO2.png"),
             Spacer(),
             NameField(),
             Spacer(),
@@ -68,7 +68,7 @@ class _NameField extends State<NameField> {
           child: TextFormField(
             enableSuggestions: true,
             autocorrect: false,
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.overlock(
                 textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -77,7 +77,7 @@ class _NameField extends State<NameField> {
                   padding: const EdgeInsetsDirectional.only(start: 8.0),
                   child: Icon(Icons.person_outline_rounded, color: DarkGreen)),
               labelText: "Name...",
-              labelStyle: GoogleFonts.openSans(
+              labelStyle: GoogleFonts.overlock(
                   textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             ),
           ),
@@ -118,7 +118,7 @@ class _NewEmailTextField extends State<NewEmailTextField> {
           child: TextFormField(
             enableSuggestions: true,
             autocorrect: false,
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.overlock(
                 textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -127,7 +127,7 @@ class _NewEmailTextField extends State<NewEmailTextField> {
                   padding: const EdgeInsetsDirectional.only(start: 8.0),
                   child: Icon(Icons.mail_outline_rounded, color: DarkGreen)),
               labelText: "Email...",
-              labelStyle: GoogleFonts.openSans(
+              labelStyle: GoogleFonts.overlock(
                   textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             ),
           ),
@@ -169,7 +169,7 @@ class _NewPasswordTextField extends State<NewPasswordTextField> {
             obscureText: true,
             enableSuggestions: false,
             autocorrect: false,
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.overlock(
                 textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -178,7 +178,7 @@ class _NewPasswordTextField extends State<NewPasswordTextField> {
                   padding: const EdgeInsetsDirectional.only(start: 8.0),
                   child: Icon(Icons.lock_outline_rounded, color: DarkGreen)),
               labelText: "Password...",
-              labelStyle: GoogleFonts.openSans(
+              labelStyle: GoogleFonts.overlock(
                   textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             ),
           ),
@@ -220,7 +220,7 @@ class _ConfirmPasswordTextField extends State<ConfirmPasswordTextField> {
             obscureText: true,
             enableSuggestions: false,
             autocorrect: false,
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.overlock(
                 textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -229,7 +229,7 @@ class _ConfirmPasswordTextField extends State<ConfirmPasswordTextField> {
                   padding: const EdgeInsetsDirectional.only(start: 8.0),
                   child: Icon(Icons.lock_outline_rounded, color: DarkGreen)),
               labelText: "Confirm Password...",
-              labelStyle: GoogleFonts.openSans(
+              labelStyle: GoogleFonts.overlock(
                   textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             ),
           ),
@@ -262,7 +262,7 @@ class SignUpBttn extends StatelessWidget {
               )),
           child: Text(
             "Sign Up",
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.overlock(
                 textStyle: TextStyle(
               color: DarkGreen,
               fontSize: 24,
@@ -287,7 +287,7 @@ class ExistingUserText extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Text(
           "Have an account?",
-          style: GoogleFonts.openSans(
+          style: GoogleFonts.overlock(
               textStyle: TextStyle(
                   color: DarkGreen.withOpacity(0.8),
                   fontSize: 20,

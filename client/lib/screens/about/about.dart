@@ -14,11 +14,11 @@ class AboutPage extends StatelessWidget {
           color: BackgroundColor,
           child: Padding(
             padding: const EdgeInsets.all(10.0),
-            child: ListView(
+            child: Column(
               children: [
                 Text(
                   "Welcome to your forest, your MeO2 forest....",
-                  style: GoogleFonts.openSans(
+                  style: GoogleFonts.overlock(
                       textStyle: TextStyle(
                           color: DarkGreen,
                           fontSize: 30,
@@ -41,7 +41,7 @@ class AboutPage extends StatelessWidget {
                       Text(
                         "Your great grandparents left you a nice piece of land for you to escape to nature. On this acre is a sapling that has miracuslously started to grow after the toxic fumes polluted  the city after your great grandparents passed. This area has since been cleaned up after strict environmental regulations, but it is now your duty to make sure you keep toxic emissions out of your forest as much as possible.",
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.openSans(
+                        style: GoogleFonts.overlock(
                             textStyle: TextStyle(
                                 color: DarkGreen,
                                 fontSize: 20,
@@ -52,7 +52,7 @@ class AboutPage extends StatelessWidget {
                       Text(
                         "We will measure this by the amount of waste you produce and types of meat you eat. Depending on the calculated carbon emissions, your one sapling can grow into a forest, or it can die.",
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.openSans(
+                        style: GoogleFonts.overlock(
                             textStyle: TextStyle(
                                 color: DarkGreen,
                                 fontSize: 20,
@@ -65,30 +65,29 @@ class AboutPage extends StatelessWidget {
                 SizedBox(
                   height: 12,
                 ),
-                SizedBox(
+                Container(
                   height: 60,
                   width: size.width / 2,
                   child: TextButton(
-                    onPressed: () {
-                      print("pressed");
-                    },
-                    style: TextButton.styleFrom(
-                        padding: const EdgeInsets.all(15),
-                        backgroundColor: LightGreen.withOpacity(0.5),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                          side: BorderSide(
-                            color: DarkGreen.withOpacity(0.9),
-                          ),
+                      style: TextButton.styleFrom(
+                          padding: const EdgeInsets.all(15),
+                          backgroundColor: DarkGreen.withOpacity(0.65),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            side: BorderSide(
+                              color: DarkGreen.withOpacity(0.2),
+                            ),
+                          )),
+                      child: Text(
+                        "Continue",
+                        style: GoogleFonts.overlock(
+                            textStyle: TextStyle(
+                          color: DarkGreen,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
                         )),
-                    child: Text("Continue...",
-                        style: GoogleFonts.openSans(
-                          textStyle: TextStyle(
-                            color: DarkGreen,
-                            fontSize: 20,
-                          ),
-                        )),
-                  ),
+                      ),
+                      onPressed: () {}),
                 )
               ],
             ),

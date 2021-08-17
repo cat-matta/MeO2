@@ -20,7 +20,7 @@ class LogIn extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Spacer(),
-            Image.asset("images/MeO2.png"),
+            Image.asset("assets/images/MeO2.png"),
             Spacer(),
             EmailTextField(),
             Spacer(),
@@ -30,19 +30,18 @@ class LogIn extends StatelessWidget {
             Spacer(),
             NewUserText(),
             Spacer(),
-            Stack(
-              children: [
-                Image.asset(
-                  "images/2.png",
-                  scale: size.width,
-                ),
-                // Image.asset("images/2.png"),
-
-                Image.asset("images/1.png", scale: size.width),
-                // Image.asset("images/4.png"),
-                // Image.asset("images/5.png"),
-              ],
-            ),
+            // Stack(
+            //   children: [
+            //     Image.asset(
+            //       "assets/images/2.png",
+            //       scale: size.width,
+            //     ),
+            //     Image.asset("assets/images/2.png"),
+            //     Image.asset("assets/images/5.png"),
+            //     Image.asset("assets/images/1.png", scale: size.width),
+            //     Image.asset("assets/images/4.png"),
+            //   ],
+            // ),
           ],
         ),
       ),
@@ -81,7 +80,7 @@ class _EmailTextField extends State<EmailTextField> {
           child: TextFormField(
             enableSuggestions: true,
             autocorrect: false,
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.overlock(
                 textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -90,7 +89,7 @@ class _EmailTextField extends State<EmailTextField> {
                   padding: const EdgeInsetsDirectional.only(start: 8.0),
                   child: Icon(Icons.mail_outline_rounded, color: DarkGreen)),
               labelText: "Email...",
-              labelStyle: GoogleFonts.openSans(
+              labelStyle: GoogleFonts.overlock(
                   textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             ),
           ),
@@ -132,7 +131,7 @@ class _PasswordTextField extends State<PasswordTextField> {
             obscureText: true,
             enableSuggestions: false,
             autocorrect: false,
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.overlock(
                 textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -141,7 +140,7 @@ class _PasswordTextField extends State<PasswordTextField> {
                   padding: const EdgeInsetsDirectional.only(start: 8.0),
                   child: Icon(Icons.lock_outline_rounded, color: DarkGreen)),
               labelText: "Password...",
-              labelStyle: GoogleFonts.openSans(
+              labelStyle: GoogleFonts.overlock(
                   textStyle: TextStyle(color: DarkGreen, fontSize: 20)),
             ),
           ),
@@ -159,7 +158,7 @@ class SignInBttn extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
-    return SizedBox(
+    return Container(
       height: 60,
       width: size.width / 2,
       child: TextButton(
@@ -174,7 +173,7 @@ class SignInBttn extends StatelessWidget {
               )),
           child: Text(
             "Sign in",
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.overlock(
                 textStyle: TextStyle(
               color: DarkGreen,
               fontSize: 24,
@@ -199,7 +198,7 @@ class NewUserText extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Text(
           "New here? Sign up!",
-          style: GoogleFonts.openSans(
+          style: GoogleFonts.overlock(
               textStyle: TextStyle(
                   color: DarkGreen.withOpacity(0.8),
                   fontSize: 20,
